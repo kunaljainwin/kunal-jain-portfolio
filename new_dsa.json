@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Striver CP Sheet🧑‍💻",
+        "icon": "https://img.icons8.com/clouds/50/000000/rocket.png",
+        "link": "https://github.com/maityamit/Striver-CP-Sheet"
+    },
+    {
+        "name": "Android Guides",
+        "icon": "https://img.icons8.com/bubbles/50/000000/android-os.png",
+        "link": "https://github.com/maityamit/Android-Development-Codes-and-Notes"
+    },
+    {
+        "name": "Jetpack Compose",
+        "icon": "https://img.icons8.com/color/50/000000/kotlin.png",
+        "link": "https://github.com/maityamit/Jetpack-Compose-Android"
+    },
+    {
+        "name": "Striver A2ZSDE Sheet",
+        "icon": "https://img.icons8.com/color/50/000000/c-plus-plus-logo.png",
+        "link": "https://github.com/maityamit/Strivers-A2Z-DSA-Sheet"
+    }
+]

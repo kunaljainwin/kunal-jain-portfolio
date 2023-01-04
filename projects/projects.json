@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Student Activity Center",
+        "desc": "A cross-platform app for event management in colleges",
+        "image": "jeemain",
+        "category": "native_android",
+        "links": {
+          "view": "https://appdistribution.firebase.google.com/pub/i/fe64b0480cd86b2e",
+          "code": "https://github.com/kunaljainwin/student-activity-center"
+        }
+    },{
+        "name": "Starflix",
+        "desc": "A website to get recommendations, find trending movies and shows, Watch movie-trailers at one click.",
+        "image": "starflix",
+        "category": "native_android",
+        "links": {
+          "view": "https://starflix-movies-5a210.firebaseapp.com",
+          "code": "https://github.com/kunaljainwin/Starflix"
+        }
+    },{
+        "name": "text-chip-field",
+        "desc": "A Fluter package for taking text input and converting them to chips/tags.",
+        "image": "tracky",
+        "category": "native_android",
+        "links": {
+          "view": "https://play.google.com/store/apps/details?id=achivementtrackerbyamit.example.achivetracker",
+          "code": "https://github.com/kunaljainwin/TEXT-CHIP-FIELD"
+        }
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "name": "C++ DSA Codes",
+        "icon": "https://img.icons8.com/color/50/000000/c-plus-plus-logo.png",
+        "link": "https://github.com/maityamit/Cpp-DSA-Notes-and-Programs"
+    },
+    {
+        "name": "C++ DSA Notes",
+        "icon": "https://img.icons8.com/color/50/000000/c-plus-plus-logo.png",
+        "link": "https://drive.google.com/drive/folders/1k1fOYHfrwnkUejehQZdSBsbMjdt0urs8"
+    },
+    {
+        "name": "LeetCode Practice🧑‍💻",
+        "icon": "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/50/000000/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-shadow-tal-revivo.png",
+        "link": "https://github.com/kunaljainwin/LeetCode-with-Kunal"
+    },
+    {
+        "name": "UI examples",
+        "icon": "https://img.icons8.com/color/50/000000/flutter.png",
+        "link": "https://github.com/kunaljainwin/FlutterFirebaseDesigns"
+    },
+    {
+        "name": "Web Dev",
+        "icon": "https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/50/000000/external-web-development-coding-kiranshastry-lineal-color-kiranshastry.png",
+        "link": "https://github.com/kunaljainwin/my-notes/blob/main/web%20development/webdevmap.md"
+    },
+    {
+        "name": "NPTEL Deep learning notes",
+        "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTStiOSZnLCBpBT6VzILn_wNmbilMLB_CfS9wM3OyBum0qPdwoLZznS&usqp=CAU",
+        "link": "https://github.com/kunaljainwin/Nptel-Deep-Learning-notes"
+    },
+    {
+        "name": "Cloud computing",
+        "icon": "https://user-images.githubusercontent.com/72144717/210154205-b8645ffe-2726-40e2-94cf-67c185aacbfb.png",
+        "link": "https://github.com/kunaljainwin/cloud-computing"
+    }
+    
+]
