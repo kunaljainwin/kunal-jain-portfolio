@@ -1,468 +1,551 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="keywords"
-      content="Kunal Jain, portfolio, software engineer, backend developer, distributed systems, high performance, java, c++, golang, spring boot, kafka, postgresql, kubernetes, HFT"
-    />
-    <meta
-      name="description"
-      content="Welcome to Kunal Jain's Portfolio. Software Engineer specializing in backend services, high-performance distributed systems, and cloud-native architectures."
-    />
-    <!-- Bootstrap CDN -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Favicon -->
-    <link
-      id="favicon"
-      rel="shortcut icon"
-      href="./assets/images/favicon.ico"
-      type="image/x-png"
-    />
-    <title>Portfolio | Kunal Jain</title>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-HTDER8P9VJ"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords"
+    content="Kunal Jain, portfolio, software engineer, backend developer, distributed systems, high performance, java, c++, golang, spring boot, kafka, postgresql, kubernetes, HFT, low-latency" />
+  <meta name="description"
+    content="Portfolio of Kunal Jain - Software Engineer specializing in backend services, high-performance distributed systems, low-latency architectures, and cloud-native engineering." />
 
-      gtag("config", "G-HTDER8P9VJ");
-    </script>
-  </head>
-  <body oncontextmenu="return false">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
 
-    <!-- navbar starts -->
-    <header>
-      <a href="index.html" class="logo"><i class="fas fa-terminal"></i> Kunal</a>
-      <a href="./assets/Kunal_jain_CV.pdf" target="_blank" class="btn"
-        ><span>Resume</span>
-        <i class="fas fa-arrow-circle-down"></i>
-      </a>
-      <div id="menu" class="fas fa-bars"></div>
-      <nav class="navbar">
-        <ul>
-          <li><a class="active" href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#work">Projects</a></li>
-          <li><a href="#education">Education</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- navbar ends -->
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
 
-    <!-- hero section starts -->
-    <section class="home" id="home">
-      <div id="particles-js"></div>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
 
-      <div class="content">
-        <h2>
-          Hi There,<br />
-          I'm Kunal <span>Jain</span>
-        </h2>
-        <p>i am into <span class="typing-text"></span></p>
-        <a href="#about" class="btn"
-          ><span>About Me</span>
-          <i class="fas fa-arrow-circle-down"></i>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Favicon -->
+  <link id="favicon" rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-png" />
+
+  <title>Portfolio | Kunal Jain</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HTDER8P9VJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-HTDER8P9VJ");
+  </script>
+</head>
+
+<body>
+  <!-- navbar starts -->
+  <header>
+    <a href="index.html" class="logo"><i class="fas fa-terminal"></i> kunal.dev</a>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#work">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+      </ul>
+    </nav>
+
+    <a href="./assets/Kunal_jain_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn">
+      <i class="fas fa-file-download"></i>
+      <span>Resume</span>
+    </a>
+  </header>
+  <!-- navbar ends -->
+
+  <!-- hero section starts -->
+  <section class="home" id="home">
+    <div id="particles-js"></div>
+
+    <div class="content">
+      <div class="status-pill">
+        <span class="status-dot"></span>
+        <span>Open to Backend & Distributed Systems Roles | Mumbai / Remote</span>
+      </div>
+
+      <h2>
+        Hi There,<br />
+        I'm Kunal <span>Jain</span>
+      </h2>
+      <p>I build <span class="typing-text"></span></p>
+
+      <div class="hero-actions">
+        <a href="#work" class="btn">
+          <span>Explore Projects</span>
+          <i class="fas fa-arrow-right"></i>
         </a>
+        <a href="./assets/Kunal_jain_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+          <span>Download CV</span>
+          <i class="fas fa-download"></i>
+        </a>
+      </div>
 
-        <div class="socials">
-          <ul class="social-icons">
-            <li>
-              <a
-                class="linkedin"
-                aria-label="LinkedIn"
-                href="https://www.linkedin.com/in/kunal-jain-junior"
-                target="_blank"
-                ><i class="fab fa-linkedin"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                class="github"
-                aria-label="GitHub"
-                href="https://github.com/kunaljainwin"
-                target="_blank"
-                ><i class="fab fa-github"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                class="twitter"
-                aria-label="Twitter"
-                href="https://twitter.com/kal_kunal"
-                target="_blank"
-                ><i class="fab fa-twitter"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                class="dev"
-                aria-label="Email"
-                href="mailto:kunaljainwin@gmail.com"
-                ><i class="fas fa-envelope"></i
-              ></a>
-            </li>
-          </ul>
+      <div class="socials">
+        <ul class="social-icons">
+          <li>
+            <a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/kunal-jain-junior"
+              target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+          </li>
+          <li>
+            <a class="github" aria-label="GitHub" href="https://github.com/kunaljainwin" target="_blank"
+              rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+          </li>
+          <li>
+            <a class="twitter" aria-label="Twitter" href="https://twitter.com/kal_kunal" target="_blank"
+              rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a class="dev" aria-label="Email" href="mailto:kunaljainwin@gmail.com"><i class="fas fa-envelope"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="image">
+      <div class="float-card top-right">
+        <i class="fas fa-bolt" style="color: #38bdf8"></i>
+        <span>Low-Latency & HFT Design</span>
+      </div>
+
+      <div class="profile-wrapper">
+        <div class="profile-inner">
+          <img draggable="false" src="./assets/images/profile_avatar.png" alt="Kunal Jain" />
         </div>
       </div>
-      <div class="image">
-        <img
-          draggable="false"
-          class="tilt"
-          src="./assets/images/dp.jpeg"
-          alt="Kunal Jain"
-        />
+
+      <div class="float-card bottom-left">
+        <i class="fas fa-server" style="color: #10b981"></i>
+        <span>99.9%+ Production Uptime</span>
       </div>
-    </section>
-    <!-- hero section ends -->
+    </div>
+  </section>
+  <!-- hero section ends -->
 
-    <!-- about section starts -->
-    <section class="about" id="about">
-      <h2 class="heading">
-        <i class="fas fa-user-alt"></i> About <span>Me</span>
-      </h2>
+  <!-- about section starts -->
+  <section class="about" id="about">
+    <h2 class="heading">
+      <i class="fas fa-user-alt"></i> About <span>Me</span>
+    </h2>
 
-      <div class="row">
-        <div class="content">
-          <h3>I'm Kunal Jain</h3>
-          <span class="tag">Software Engineer | Backend & Distributed Systems</span>
-
-          <p>
-            Software Engineer with nearly 4 years of experience building backend services and high-performance applications across financial technology and capital markets. Experienced in <b>Java, C++, Go, and Node.js</b>, with hands-on expertise in REST APIs, gRPC, PostgreSQL, Kafka, and Linux. Skilled in designing scalable services, optimizing performance, troubleshooting production issues, and delivering reliable backend solutions with exposure to low-latency and high-frequency trading (HFT) system design.
-          </p>
-
-          <div class="box-container">
-            <div class="box">
-              <p>⦿ <span>LeetCode</span> Max rating of 1668, solved 700+ problems (DSA, Concurrency & Systems)</p>
-              <p>⦿ <span>FinTech & Capital Markets</span> Low-latency microservices, risk management, and multi-tenant platforms</p>
-              <p>⦿ <span>Core Stack</span> Java (Spring Boot), C++, Go, Node.js, PostgreSQL, Kafka, Redis, gRPC</p>
-              <p>⦿ <span>Cloud & DevOps</span> Docker, Kubernetes, Helm, Argo CD, AWS, Linux (Red Hat)</p>
-              <p>⦿ <span>Open Source</span> Hacktoberfest contributor & mentor across open-source initiatives</p>
-            </div>
-          </div>
-
-          <div class="box-container">
-            <div class="box">
-              <p><span> email : </span> kunaljainwin@gmail.com</p>
-              <p><span> place : </span> Andheri, Mumbai, India</p>
-              <p><span> phone : </span> +91 6378683117</p>
-            </div>
-          </div>
-
-          <div class="resumebtn">
-            <a href="https://www.linkedin.com/in/kunal-jain-junior" target="_blank" class="btn"
-              ><span>LinkedIn</span>
-              <i class="fas fa-chevron-right"></i>
-            </a>
-          </div>
+    <div class="bento-grid">
+      <!-- Main Bio Card -->
+      <div class="bento-card bento-main">
+        <h3>
+          <i class="fas fa-code"></i> Engineering Philosophy & Architecture
+        </h3>
+        <span class="role-tag">Software Engineer | Backend Services & Distributed Systems</span>
+        <p>
+          Software Engineer with nearly <b>4 years of experience</b> building
+          backend services and high-performance applications across
+          <b>financial technology and capital markets</b>. Experienced in
+          <b>Java, C++, Go, and Node.js</b>, with hands-on expertise in REST
+          APIs, gRPC, PostgreSQL, Kafka, and Linux.
+        </p>
+        <p style="margin-top: 1rem">
+          Skilled in designing scalable services, optimizing query
+          performance, troubleshooting complex production incidents, and
+          delivering reliable backend solutions with exposure to low-latency
+          and high-frequency trading (HFT) system architecture.
+        </p>
+        <div class="chip-list">
+          <span class="chip">Java (Spring Boot)</span>
+          <span class="chip">Modern C++</span>
+          <span class="chip">Go (Golang)</span>
+          <span class="chip">PostgreSQL</span>
+          <span class="chip">Apache Kafka</span>
+          <span class="chip">Redis</span>
+          <span class="chip">gRPC / Protobuf</span>
+          <span class="chip">Kubernetes</span>
+          <span class="chip">Argo CD</span>
+          <span class="chip">Linux (Red Hat)</span>
         </div>
       </div>
-    </section>
-    <!-- about section ends -->
 
-    <!-- skills section starts -->
-    <section class="skills" id="skills">
-      <h2 class="heading">
-        <i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span>
-      </h2>
-
-      <div class="container">
-        <div class="row" id="skillsContainer"></div>
-      </div>
-    </section>
-    <!-- skills section ends -->
-
-    <!-- my own notes section starts -->
-    <section class="skills" id="notes">
-      <h2 class="heading">
-        <i class="fas fa-book-open"></i> Technical Notes
-        <span>& Repositories</span>
-      </h2>
-
-      <div class="container">
-        <div class="row" id="notesContainer"></div>
-      </div>
-    </section>
-    <!-- my own notes section ends -->
-
-    <!-- experience section starts -->
-    <section class="experience" id="experience">
-      <h2 class="heading"><i class="fas fa-briefcase"></i> Work <span>Experience</span></h2>
-
-      <div class="timeline">
-
-        <div class="container right">
-          <div class="content">
-            <div class="tag">
-              <h2>Flair Labs</h2>
-            </div>
-            <div class="desc">
-                <h3>Software Engineer | Mumbai</h3>
-                <p><strong>Oct 2025 – Present</strong></p>
-                <p style="font-size: 1.25rem; margin-top: 0.5rem; line-height: 1.5;">
-                  • Developed Java Spring Boot backend services and REST APIs for CRM and Dynamic UI applications in banking/financial platforms (multi-tenancy, dynamic tenant resolution, authentication & authorization).<br/>
-                  • Designed & optimized PostgreSQL-backed services (partitioning, indexing, WAL, tsvector full-text search, UNNEST bulk operations, pg_cron).<br/>
-                  • Delivered backend features end-to-end with Argo CD, Helm, Kustomize, and Kubernetes Ingress in CI/CD workflows.
-                </p>
-            </div>
+      <!-- Key Stats Card -->
+      <div class="bento-card bento-stats">
+        <div class="stat-box">
+          <div class="stat-icon">
+            <i class="fas fa-history"></i>
+          </div>
+          <div class="stat-data">
+            <h4>~4 Years</h4>
+            <p>FinTech & Backend Engineering</p>
           </div>
         </div>
 
-        <div class="container left">
-          <div class="content">
-            <div class="tag">
-              <h2>63 Moons (now Synapsewave Innovations)</h2>
-            </div>
-            <div class="desc">
-                <h3>Software Engineer | Mumbai</h3>
-                <p><strong>Feb 2023 – Oct 2025</strong></p>
-                <p style="font-size: 1.25rem; margin-top: 0.5rem; line-height: 1.5;">
-                  • Developed C++, Go, and Node.js microservices with Protocol Buffers & gRPC, reducing inter-service latency by 30%.<br/>
-                  • Led surveillance/risk platform automation, reducing regression testing time by 80% via custom in-house testing framework.<br/>
-                  • Built POCs and backend services using Aerospike, PostgreSQL, Redis, and Kong API Gateway; performed root-cause analysis on production incidents to maintain 99.9%+ availability.
-                </p>
-            </div>
+        <div class="stat-box">
+          <div class="stat-icon purple">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <div class="stat-data">
+            <h4>700+ Solved</h4>
+            <p>LeetCode (Peak Rating 1668)</p>
           </div>
         </div>
 
-        <div class="morebtn">
-          <a href="experience/index.html" class="btn"
-            ><span>View Full Details</span>
-            <i class="fas fa-arrow-right"></i>
+        <div class="stat-box">
+          <div class="stat-icon emerald">
+            <i class="fas fa-tachometer-alt"></i>
+          </div>
+          <div class="stat-data">
+            <h4>30% Latency Cut</h4>
+            <p>Microservices via gRPC / Protobuf</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Domain Specialties -->
+      <div class="bento-card bento-metrics">
+        <h3><i class="fas fa-layer-group"></i> Core Domains</h3>
+        <div class="chip-list" style="margin-top: 1rem">
+          <span class="chip">FinTech & Capital Markets</span>
+          <span class="chip">Low-Latency Microservices</span>
+          <span class="chip">Multi-Tenant Platforms</span>
+          <span class="chip">Dynamic UI Resolution</span>
+          <span class="chip">Surveillance & Risk Engine</span>
+          <span class="chip">Event-Driven Data Pipelines</span>
+        </div>
+      </div>
+
+      <!-- High-Impact Delivery -->
+      <div class="bento-card bento-domains">
+        <h3><i class="fas fa-shield-alt"></i> Reliability & DevOps</h3>
+        <p style="font-size: 1.35rem">
+          Proven track record delivering backend features with <b>99.9%+ availability</b>,
+          automating regression suites (<b>80% time cut</b>), and managing continuous deployments with
+          <b>Argo CD, Helm, Kustomize</b>, and Kubernetes Ingress.
+        </p>
+      </div>
+
+      <!-- Quick Contact -->
+      <div class="bento-card bento-contact">
+        <h3><i class="fas fa-address-card"></i> Direct Connect</h3>
+        <div class="contact-list">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:kunaljainwin@gmail.com">kunaljainwin@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Andheri, Mumbai, India</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>+91 6378683117</span>
+          </div>
+        </div>
+        <div style="margin-top: 1.6rem">
+          <a href="https://www.linkedin.com/in/kunal-jain-junior" target="_blank" rel="noopener noreferrer" class="btn"
+            style="width: 100%; padding: 0.8rem 1.4rem; font-size: 1.3rem">
+            <i class="fab fa-linkedin"></i>
+            <span>Connect on LinkedIn</span>
           </a>
         </div>
       </div>
-    </section>
-    <!-- experience section ends -->
+    </div>
+  </section>
+  <!-- about section ends -->
 
-    <!-- work project section starts -->
-    <section class="work" id="work">
-      <h2 class="heading">
-        <i class="fas fa-laptop-code"></i> Projects <span>Made</span>
-      </h2>
+  <!-- skills section starts -->
+  <section class="skills" id="skills">
+    <h2 class="heading">
+      <i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span>
+    </h2>
 
-      <div class="box-container" id="projectsContainer"></div>
+    <div class="container">
+      <div class="row" id="skillsContainer"></div>
+    </div>
+  </section>
+  <!-- skills section ends -->
 
-      <div class="viewall">
-        <a href="projects/index.html" class="btn"
-          ><span>View All Projects</span>
+  <!-- my own notes section starts -->
+  <section class="skills" id="notes">
+    <h2 class="heading">
+      <i class="fas fa-book-open"></i> Technical Notes
+      <span>& Repositories</span>
+    </h2>
+
+    <div class="container">
+      <div class="row" id="notesContainer"></div>
+    </div>
+  </section>
+  <!-- my own notes section ends -->
+
+  <!-- experience section starts -->
+  <section class="experience" id="experience">
+    <h2 class="heading">
+      <i class="fas fa-briefcase"></i> Work <span>Experience</span>
+    </h2>
+
+    <div class="timeline">
+      <!-- Flair Labs -->
+      <div class="container right">
+        <div class="content">
+          <div class="tag">
+            <h2>Flair Labs</h2>
+            <span class="period">Oct 2025 – Present</span>
+          </div>
+          <div class="desc">
+            <h3>Software Engineer | Mumbai</h3>
+            <ul>
+              <li>
+                Developed <b>Java Spring Boot</b> backend services and REST APIs
+                for CRM and Dynamic UI applications in banking/financial platforms,
+                implementing multi-tenancy, dynamic tenant resolution, authentication,
+                and authorization.
+              </li>
+              <li>
+                Designed & optimized high-performance <b>PostgreSQL-backed</b> services
+                (table partitioning, indexing, WAL, <code>tsvector</code> full-text search,
+                <code>UNNEST</code> bulk operations, and <code>pg_cron</code>).
+              </li>
+              <li>
+                Delivered backend features end-to-end with <b>Argo CD, Helm, Kustomize</b>,
+                and Kubernetes Ingress in modern GitOps CI/CD workflows.
+              </li>
+            </ul>
+            <div class="tech-pills">
+              <span class="tech-pill">Java</span>
+              <span class="tech-pill">Spring Boot</span>
+              <span class="tech-pill">PostgreSQL</span>
+              <span class="tech-pill">Argo CD</span>
+              <span class="tech-pill">Helm</span>
+              <span class="tech-pill">Kubernetes</span>
+              <span class="tech-pill">Multi-Tenancy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 63 Moons -->
+      <div class="container left">
+        <div class="content">
+          <div class="tag">
+            <h2>63 Moons (Synapsewave Innovations)</h2>
+            <span class="period">Feb 2023 – Oct 2025</span>
+          </div>
+          <div class="desc">
+            <h3>Software Engineer | Mumbai</h3>
+            <ul>
+              <li>
+                Developed <b>C++, Go, and Node.js</b> microservices using Protocol Buffers
+                and gRPC, reducing inter-service communication latency by <b>30%</b>.
+              </li>
+              <li>
+                Led automation initiatives for surveillance and risk platforms, reducing
+                regression testing time by <b>80%</b> via a custom in-house testing framework.
+              </li>
+              <li>
+                Built high-throughput backend services using <b>Aerospike, PostgreSQL, Redis,
+                  and Kong API Gateway</b>; conducted root-cause analysis on critical production
+                incidents to sustain <b>99.9%+ availability</b>.
+              </li>
+            </ul>
+            <div class="tech-pills">
+              <span class="tech-pill">C++17</span>
+              <span class="tech-pill">Go</span>
+              <span class="tech-pill">Node.js</span>
+              <span class="tech-pill">gRPC</span>
+              <span class="tech-pill">Protobuf</span>
+              <span class="tech-pill">Redis</span>
+              <span class="tech-pill">Aerospike</span>
+              <span class="tech-pill">Kafka</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="morebtn">
+        <a href="experience/index.html" class="btn">
+          <span>View Comprehensive Experience</span>
           <i class="fas fa-arrow-right"></i>
         </a>
       </div>
-    </section>
-    <!-- work project section ends -->
+    </div>
+  </section>
+  <!-- experience section ends -->
 
-    <!-- education section starts -->
-    <section class="education" id="education">
-      <h1 class="heading">
-        <i class="fas fa-graduation-cap"></i> My <span>Education</span>
-      </h1>
+  <!-- work project section starts -->
+  <section class="work" id="work">
+    <h2 class="heading">
+      <i class="fas fa-laptop-code"></i> Featured <span>Projects</span>
+    </h2>
 
-      <p class="qoute">
-        Education is not the learning of facts, but the training of the mind to
-        think.
-      </p>
+    <div class="box-container" id="projectsContainer"></div>
 
-      <div class="box-container">
-        <div class="box">
-          <div class="image">
-            <img
-              draggable="false"
-              src="./assets/images/educat/rtu-cs-bg.png"
-              alt="RTU Kota"
-            />
-          </div>
-          <div class="content">
-            <h3>B.Tech in Computer Science Engineering</h3>
-            <p>Rajasthan Technical University Kota | RTU KOTA</p>
-            <p>CGPA: 8.9</p>
-            <h4>2019 – 2023 | Completed</h4>
-          </div>
+    <div class="viewall">
+      <a href="projects/index.html" class="btn">
+        <span>View All Projects</span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+  <!-- work project section ends -->
+
+  <!-- education section starts -->
+  <section class="education" id="education">
+    <h2 class="heading">
+      <i class="fas fa-graduation-cap"></i> Academic <span>Background</span>
+    </h2>
+
+    <p class="qoute">
+      "Education is not the learning of facts, but the training of the mind to think."
+    </p>
+
+    <div class="box-container">
+      <div class="box">
+        <div class="image">
+          <img draggable="false" src="./assets/images/educat/rtu-cs-bg.png" alt="RTU Kota" loading="lazy" />
         </div>
-
-        <div class="box">
-          <div class="image">
-            <img
-              draggable="false"
-              src="./assets/images/educat/alok-school-bg.jfif"
-              alt="Swami Alok Teon Ram School"
-            />
-          </div>
-          <div class="content">
-            <h3>Senior Secondary Education (12th PCM)</h3>
-            <p>Swami Alok Teon Ram School, RBSE</p>
-            <p>Percentage: 79.6%</p>
-            <h4>2017 – 2019 | Completed</h4>
-          </div>
-        </div>
-
-        <div class="box">
-          <div class="image">
-            <img
-              draggable="false"
-              src="./assets/images/educat/allen_kota.jpg"
-              alt="Allen Career Institute"
-            />
-          </div>
-          <div class="content">
-            <h3>JEE | PCM Foundation</h3>
-            <p>Allen Career Institute | Kota</p>
-            <p>96.2%ile | Competitive Mathematics & Physics</p>
-            <h4>2017 – 2019 | Completed</h4>
-          </div>
-        </div>
-
-        <div class="box">
-          <div class="image">
-            <img
-              draggable="false"
-              src="./assets/images/educat/vidhya-mandir-bg.jfif"
-              alt="Vidya Mandir Sr. Sec. School"
-            />
-          </div>
-          <div class="content">
-            <h3>Secondary Education (10th)</h3>
-            <p>Vidya Mandir Sr. Sec. School | V.M.S.S.S.</p>
-            <p>CGPA: 8.6</p>
-            <h4>2005 – 2017 | Completed</h4>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- education section ends -->
-
-    <!-- footer section starts -->
-    <section class="footer">
-      <div class="box-container">
-        <div class="box">
-          <h3>Kunal's Portfolio</h3>
-          <p>
-            Thank you for visiting my personal portfolio website. Connect with
-            me over socials or email. <br />
-            <br />
-            Keep Building 🚀.
-          </p>
-        </div>
-
-        <div class="box">
-          <h3>quick links</h3>
-          <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
-          <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
-          <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
-          <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
-          <a href="#work"><i class="fas fa-chevron-circle-right"></i> projects</a>
-          <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
-        </div>
-
-        <div class="box">
-          <h3>contact info</h3>
-          <p><i class="fas fa-phone"></i>+91 6378683117</p>
-          <p><i class="fas fa-envelope"></i>kunaljainwin@gmail.com</p>
-          <p>
-            <i class="fas fa-map-marked-alt"></i>Andheri, Mumbai, India
-          </p>
-          <div class="share">
-            <a
-              href="https://www.linkedin.com/in/kunal-jain-junior"
-              class="fab fa-linkedin"
-              aria-label="LinkedIn"
-              target="_blank"
-            ></a>
-            <a
-              href="https://github.com/kunaljainwin"
-              class="fab fa-github"
-              aria-label="GitHub"
-              target="_blank"
-            ></a>
-            <a
-              href="mailto:kunaljainwin@gmail.com"
-              class="fas fa-envelope"
-              aria-label="Mail"
-              target="_blank"
-            ></a>
-            <a
-              href="https://twitter.com/kal_kunal"
-              class="fab fa-twitter"
-              aria-label="Twitter"
-              target="_blank"
-            ></a>
-          </div>
+        <div class="content">
+          <h3>B.Tech in Computer Science Engineering</h3>
+          <p>Rajasthan Technical University (RTU Kota)</p>
+          <span class="grade">CGPA: 8.9 / 10.0</span>
+          <h4>2019 – 2023 | Completed</h4>
         </div>
       </div>
 
-      <h1 class="credit">Copyright © 2026 All rights reserved | Kunal Jain</h1>
-    </section>
-    <!-- footer section ends -->
+      <div class="box">
+        <div class="image">
+          <img draggable="false" src="./assets/images/educat/allen_kota.jpg" alt="Allen Career Institute Kota"
+            loading="lazy" />
+        </div>
+        <div class="content">
+          <h3>JEE | PCM Foundation</h3>
+          <p>Allen Career Institute | Kota</p>
+          <span class="grade">96.2 %ile | Competitive Mathematics & Physics</span>
+          <h4>2017 – 2019 | Completed</h4>
+        </div>
+      </div>
 
-    <!-- scroll top btn -->
-    <a
-      href="#home"
-      aria-label="ScrollTop"
-      class="fas fa-angle-up"
-      id="scroll-top"
-    ></a>
-    <!-- scroll back to top -->
+      <div class="box">
+        <div class="image">
+          <img draggable="false" src="./assets/images/educat/alok-school-bg.jfif" alt="Swami Alok Teon Ram School"
+            loading="lazy" />
+        </div>
+        <div class="content">
+          <h3>Senior Secondary Education (12th PCM)</h3>
+          <p>Swami Alok Teon Ram School, RBSE</p>
+          <span class="grade">Percentage: 79.6%</span>
+          <h4>2017 – 2019 | Completed</h4>
+        </div>
+      </div>
 
-    <!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
-    <!-- jquery cdn -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+      <div class="box">
+        <div class="image">
+          <img draggable="false" src="./assets/images/educat/vidhya-mandir-bg.jfif" alt="Vidya Mandir Sr. Sec. School"
+            loading="lazy" />
+        </div>
+        <div class="content">
+          <h3>Secondary Education (10th)</h3>
+          <p>Vidya Mandir Sr. Sec. School | V.M.S.S.S.</p>
+          <span class="grade">CGPA: 8.6 / 10.0</span>
+          <h4>2005 – 2017 | Completed</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- education section ends -->
 
-    <!-- typed.js cdn -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
-      integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+  <!-- footer section starts -->
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3><i class="fas fa-terminal" style="color: var(--primary);"></i> Kunal's Portfolio</h3>
+        <p>
+          Software Engineer specializing in high-performance backend systems,
+          low-latency architecture, and distributed data platforms.<br /><br />
+          Let's build scalable systems together.
+        </p>
+      </div>
 
-    <!-- particle.js links -->
-    <script src="./assets/js/particles.min.js"></script>
-    <script src="./assets/js/app.js"></script>
+      <div class="box">
+        <h3>Quick Links</h3>
+        <div class="links">
+          <a href="#home"><i class="fas fa-chevron-right"></i> Home</a>
+          <a href="#about"><i class="fas fa-chevron-right"></i> About</a>
+          <a href="#skills"><i class="fas fa-chevron-right"></i> Skills</a>
+          <a href="#experience"><i class="fas fa-chevron-right"></i> Experience</a>
+          <a href="#work"><i class="fas fa-chevron-right"></i> Projects</a>
+          <a href="#education"><i class="fas fa-chevron-right"></i> Education</a>
+        </div>
+      </div>
 
-    <!-- vanilla tilt.js links -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
-      integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+      <div class="box">
+        <h3>Contact Info</h3>
+        <div class="contact-item">
+          <p><i class="fas fa-phone-alt"></i> +91 6378683117</p>
+        </div>
+        <div class="contact-item">
+          <p><i class="fas fa-envelope"></i> kunaljainwin@gmail.com</p>
+        </div>
+        <div class="contact-item">
+          <p><i class="fas fa-map-marker-alt"></i> Andheri, Mumbai, India</p>
+        </div>
+        <div class="share">
+          <a href="https://www.linkedin.com/in/kunal-jain-junior" class="fab fa-linkedin-in" aria-label="LinkedIn"
+            target="_blank" rel="noopener noreferrer"></a>
+          <a href="https://github.com/kunaljainwin" class="fab fa-github" aria-label="GitHub" target="_blank"
+            rel="noopener noreferrer"></a>
+          <a href="mailto:kunaljainwin@gmail.com" class="fas fa-envelope" aria-label="Mail"></a>
+          <a href="https://twitter.com/kal_kunal" class="fab fa-twitter" aria-label="Twitter" target="_blank"
+            rel="noopener noreferrer"></a>
+        </div>
+      </div>
+    </div>
 
-    <!-- scroll reveal anim -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <div class="credit">
+      Copyright © 2026 Kunal Jain. Built for high performance & reliability.
+    </div>
+  </section>
+  <!-- footer section ends -->
 
-    <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
-    <script src="./projects/script.js"></script>
-    <script src="./assets/js/script.js"></script>
-  </body>
+  <!-- scroll top btn -->
+  <a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+
+  <!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+  <!-- jquery cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- typed.js cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
+    integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- particle.js links -->
+  <script src="./assets/js/particles.min.js"></script>
+  <script src="./assets/js/app.js"></script>
+
+  <!-- vanilla tilt.js links -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
+    integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- scroll reveal anim -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- custom script -->
+  <script src="./assets/js/script.js"></script>
+</body>
+
 </html>

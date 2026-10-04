@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+    // Mobile Navbar toggle
     $('#menu').click(function () {
         $(this).toggleClass('fa-times');
         $('.navbar').toggleClass('nav-toggle');
@@ -9,250 +10,222 @@ $(document).ready(function () {
         $('#menu').removeClass('fa-times');
         $('.navbar').removeClass('nav-toggle');
 
-        if (window.scrollY > 60) {
-            document.querySelector('#scroll-top').classList.add('active');
+        if (window.scrollY > 80) {
+            $('#scroll-top').addClass('active');
         } else {
-            document.querySelector('#scroll-top').classList.remove('active');
+            $('#scroll-top').removeClass('active');
         }
 
-        // scroll spy
+        // Active link scroll spy
         $('section').each(function () {
-            let height = $(this).height();
-            let offset = $(this).offset().top - 200;
-            let top = $(window).scrollTop();
-            let id = $(this).attr('id');
+            const height = $(this).outerHeight();
+            const offset = $(this).offset().top - 120;
+            const top = $(window).scrollTop();
+            const id = $(this).attr('id');
 
-            if (top > offset && top < offset + height) {
+            if (top >= offset && top < offset + height) {
                 $('.navbar ul li a').removeClass('active');
                 $('.navbar').find(`[href="#${id}"]`).addClass('active');
             }
         });
     });
 
-    // smooth scrolling
+    // Smooth scrolling for navigation anchors
     $('a[href*="#"]').on('click', function (e) {
+        const target = $(this).attr('href');
+        if (target === '#' || !$(target).length) return;
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset().top,
-        }, 500, 'linear')
+            scrollTop: $(target).offset().top - 70,
+        }, 400, 'swing');
     });
-
-    // <!-- emailjs to mail contact form data -->
-    $("#contact-form").submit(function (event) {
-        emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
-
-        emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
-            .then(function (response) {
-                console.log('SUCCESS!', response.status, response.text);
-                document.getElementById("contact-form").reset();
-                alert("Form Submitted Successfully");
-            }, function (error) {
-                console.log('FAILED...', error);
-                alert("Form Submission Failed! Try Again");
-            });
-        event.preventDefault();
-    });
-    // <!-- emailjs to mail contact form data -->
 
 });
 
-document.addEventListener('visibilitychange',
-    function () {
-        if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Kunal Jain";
-            $("#favicon").attr("href", "assets/images/favicon.ico");
-        }
-        else {
-            document.title = "Portfolio | Kunal Jain";
-            $("#favicon").attr("href", "assets/images/favicon.ico");
-        }
-    });
-
-
-// <!-- typed js effect starts -->
-var typed = new Typed(".typing-text", {
-    strings: [
-        "Backend Development",
-        "Distributed Systems",
-        "High-Performance Applications",
-        "Cloud-Native & DevOps"
-    ],
-    loop: true,
-    typeSpeed: 50,
-    backSpeed: 25,
-    backDelay: 500,
-});
-// <!-- typed js effect ends -->
-
-async function fetchData(type = "skills") {
-    let response
-    if(type==="skills"){
-        response = await fetch("skills.json")
-    }else if(type === "projects"){
-        response = await fetch("./projects/projects.json")
-    }else if(type==="notes"){
-        response = await fetch("dsa.json")
+// Page visibility title handler
+document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState === 'visible') {
+        document.title = 'Portfolio | Kunal Jain';
+    } else {
+        document.title = 'Kunal Jain | Backend & Distributed Systems';
     }
-    const data = await response.json();
-    return data;
+});
+
+// Typed.js effect
+if ($('.typing-text').length) {
+    new Typed('.typing-text', {
+        strings: [
+            'Low-Latency & Distributed Systems',
+            'Backend Microservices in Java & Go',
+            'High-Performance Systems in Modern C++',
+            'Event-Driven Architectures (Kafka & Postgres)',
+            'Cloud-Native Platforms (K8s & Argo CD)'
+        ],
+        loop: true,
+        typeSpeed: 45,
+        backSpeed: 25,
+        backDelay: 1200,
+    });
+}
+
+// Fetch helper with error safety
+async function fetchData(type = "skills") {
+    let url = "skills.json";
+    if (type === "projects") {
+        url = "./projects/projects.json";
+    } else if (type === "notes") {
+        url = "dsa.json";
+    }
+
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return await response.json();
+    } catch (err) {
+        console.error(`Error loading ${type}:`, err);
+        return [];
+    }
 }
 
 function showSkills(skills) {
-    let skillsContainer = document.getElementById("skillsContainer");
+    const container = document.getElementById("skillsContainer");
+    if (!container || !skills.length) return;
+
     let skillHTML = "";
     skills.forEach(skill => {
         skillHTML += `
         <div class="bar">
-              <div class="info">
-                <img src=${skill.icon} alt="skill" />
+            <div class="info">
+                <img src="${skill.icon}" alt="${skill.name}" loading="lazy" />
                 <span>${skill.name}</span>
-              </div>
-            </div>`
+            </div>
+        </div>`;
     });
-    skillsContainer.innerHTML = skillHTML;
+    container.innerHTML = skillHTML;
 }
 
 function showNotes(notes) {
-    let skillsContainer = document.getElementById("notesContainer");
-    let skillHTML = "";
-    notes.forEach(skill => {
-        skillHTML += `
+    const container = document.getElementById("notesContainer");
+    if (!container || !notes.length) return;
+
+    let notesHTML = "";
+    notes.forEach(item => {
+        notesHTML += `
         <div class="bar">
-              <div class="info">
-                <a target="_blank" href=${skill.link}>
-                <img src=${skill.icon} alt="skill"/></a>
-                <span>${skill.name}</span>
-              </div>
-            </div>`
+            <div class="info">
+                <a target="_blank" rel="noopener noreferrer" href="${item.link}" aria-label="${item.name}">
+                    <img src="${item.icon}" alt="${item.name}" loading="lazy" />
+                </a>
+                <span>${item.name}</span>
+                <a target="_blank" rel="noopener noreferrer" href="${item.link}" style="margin-left: auto; color: var(--primary);">
+                    <i class="fas fa-external-link-alt" style="font-size: 1.2rem;"></i>
+                </a>
+            </div>
+        </div>`;
     });
-    skillsContainer.innerHTML = skillHTML;
+    container.innerHTML = notesHTML;
+}
+
+function getCategoryLabel(category) {
+    const map = {
+        'backend': 'Backend & Distributed',
+        'systems': 'Systems & Low-Latency',
+        'cloud': 'Cloud & DevOps',
+        'web_app': 'Full-Stack Application'
+    };
+    return map[category] || 'Software Engineering';
 }
 
 function showProjects(projects) {
-    let projectsContainer = document.querySelector("#work .box-container");
+    const container = document.querySelector("#work .box-container");
+    if (!container || !projects.length) return;
+
     let projectHTML = "";
-    projects.slice(0, 10).filter(project => project.category != "android").forEach(project => {
+    projects.slice(0, 9).forEach(project => {
+        const categoryLabel = getCategoryLabel(project.category);
         projectHTML += `
         <div class="box tilt">
-      <img draggable="false" src="assets/images/projects/${project.image}.png" alt="project" />
-      <div class="content">
-        <div class="tag">
-        <h3>${project.name}</h3>
-        </div>
-        <div class="desc">
-          <p>${project.desc}</p>
-          <div class="btns">
-            <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>`
+            <div class="img-wrapper">
+                <img draggable="false" src="assets/images/projects/${project.image}.png" alt="${project.name}" loading="lazy" />
+                <span class="category-badge">${categoryLabel}</span>
+            </div>
+            <div class="content">
+                <div class="tag">
+                    <h3>${project.name}</h3>
+                </div>
+                <div class="desc">
+                    <p>${project.desc}</p>
+                    <div class="btns">
+                        <a href="${project.links.code}" class="btn" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="${project.links.view}" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-external-link-alt"></i> Architecture
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>`;
     });
-    projectsContainer.innerHTML = projectHTML;
+    container.innerHTML = projectHTML;
 
-    // <!-- tilt js effect starts -->
-    VanillaTilt.init(document.querySelectorAll(".tilt"), {
-        max: 15,
-    });
-    // <!-- tilt js effect ends -->
-
-    /* ===== SCROLL REVEAL ANIMATION ===== */
-    const srtop = ScrollReveal({
-        origin: 'top',
-        distance: '80px',
-        duration: 1000,
-        reset: true
-    });
-
-    /* SCROLL PROJECTS */
-    srtop.reveal('.work .box', { interval: 200 });
-
-}
-
-fetchData().then(data => {
-    showSkills(data);
-});
-
-fetchData("projects").then(data => {
-    showProjects(data);
-});
-
-fetchData("notes").then(data => {
-    showNotes(data);
-});
-
-// <!-- tilt js effect starts -->
-VanillaTilt.init(document.querySelectorAll(".tilt"), {
-    max: 15,
-});
-// <!-- tilt js effect ends -->
-
-
-
-document.onkeydown = function (e) {
-    if (e.keyCode == 123) {
-        return false;
+    // Initialize Tilt on dynamically rendered cards
+    if (typeof VanillaTilt !== 'undefined') {
+        VanillaTilt.init(document.querySelectorAll(".work .tilt"), {
+            max: 10,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.15,
+        });
     }
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-        return false;
-    }
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-        return false;
-    }
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-        return false;
-    }
-    if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-        return false;
+
+    // Scroll reveal for project cards
+    if (typeof ScrollReveal !== 'undefined') {
+        ScrollReveal().reveal('.work .box', {
+            origin: 'bottom',
+            distance: '30px',
+            duration: 800,
+            interval: 150,
+            reset: false
+        });
     }
 }
 
+// Initial Data Loads
+fetchData("skills").then(data => showSkills(data));
+fetchData("projects").then(data => showProjects(data));
+fetchData("notes").then(data => showNotes(data));
 
+// Initialize Tilt for static elements
+if (typeof VanillaTilt !== 'undefined') {
+    VanillaTilt.init(document.querySelectorAll(".profile-wrapper, .bento-card"), {
+        max: 8,
+        speed: 400,
+        glare: false
+    });
+}
 
-/* ===== SCROLL REVEAL ANIMATION ===== */
-const srtop = ScrollReveal({
-    origin: 'top',
-    distance: '80px',
-    duration: 1000,
-    reset: true
-});
+// ScrollReveal Animations
+if (typeof ScrollReveal !== 'undefined') {
+    const sr = ScrollReveal({
+        origin: 'bottom',
+        distance: '40px',
+        duration: 900,
+        reset: false
+    });
 
-/* SCROLL HOME */
-srtop.reveal('.home .content h3', { delay: 200 });
-srtop.reveal('.home .content p', { delay: 200 });
-srtop.reveal('.home .content .btn', { delay: 200 });
-
-srtop.reveal('.home .image', { delay: 400 });
-srtop.reveal('.home .linkedin', { interval: 600 });
-srtop.reveal('.home .github', { interval: 800 });
-srtop.reveal('.home .twitter', { interval: 1000 });
-srtop.reveal('.home .telegram', { interval: 600 });
-srtop.reveal('.home .instagram', { interval: 600 });
-srtop.reveal('.home .dev', { interval: 600 });
-
-/* SCROLL ABOUT */
-srtop.reveal('.about .content h3', { delay: 200 });
-srtop.reveal('.about .content .tag', { delay: 200 });
-srtop.reveal('.about .content p', { delay: 200 });
-srtop.reveal('.about .content .box-container', { delay: 200 });
-srtop.reveal('.about .content .resumebtn', { delay: 200 });
-
-
-/* SCROLL SKILLS */
-srtop.reveal('.skills .container', { interval: 200 });
-srtop.reveal('.skills .container .bar', { delay: 400 });
-
-/* SCROLL EDUCATION */
-srtop.reveal('.education .box', { interval: 200 });
-
-/* SCROLL PROJECTS */
-srtop.reveal('.work .box', { interval: 200 });
-
-/* SCROLL EXPERIENCE */
-srtop.reveal('.experience .timeline', { delay: 400 });
-srtop.reveal('.experience .timeline .container', { interval: 400 });
-
-/* SCROLL CONTACT */
-srtop.reveal('.contact .container', { delay: 400 });
-srtop.reveal('.contact .container .form-group', { delay: 400 });
+    sr.reveal('.home .content', { delay: 100 });
+    sr.reveal('.home .image', { delay: 200 });
+    sr.reveal('.about .heading', { delay: 100 });
+    sr.reveal('.bento-card', { interval: 120 });
+    sr.reveal('.skills .heading', { delay: 100 });
+    sr.reveal('.skills .container', { delay: 150 });
+    sr.reveal('#notes .heading', { delay: 100 });
+    sr.reveal('#notes .container', { delay: 150 });
+    sr.reveal('.experience .heading', { delay: 100 });
+    sr.reveal('.experience .timeline .container', { interval: 200 });
+    sr.reveal('.education .heading', { delay: 100 });
+    sr.reveal('.education .box', { interval: 150 });
+}

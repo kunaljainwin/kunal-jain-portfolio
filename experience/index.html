@@ -4,18 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <title>Work Experience | Kunal Jain</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link id='favicon' rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-png">
 
-    <title>Experience | Portfolio Kunal Jain</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
-<body oncontextmenu="return false">
+<body>
 
 <!-- navbar starts -->
 <header>
-    <a href="../index.html" class="logo"><i class="fas fa-terminal"></i> Kunal</a>
+    <a href="../index.html" class="logo"><i class="fas fa-terminal"></i> kunal.dev</a>
 
     <div id="menu" class="fas fa-bars"></div>
     <nav class="navbar">
@@ -28,6 +37,11 @@
             <li><a href="../index.html#education">Education</a></li>
         </ul>
     </nav>
+
+    <a href="../assets/Kunal_jain_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn">
+        <i class="fas fa-file-download"></i>
+        <span>Resume</span>
+    </a>
 </header>
 <!-- navbar ends -->
 
@@ -36,43 +50,64 @@
 
   <h2 class="heading"><i class="fas fa-briefcase"></i> Work <span>Experience</span></h2>
   <div class="quote">
-      <span>Building resilient, high-performance distributed systems and financial applications.</span>
+      <span>Architecting and delivering resilient, high-performance distributed systems, FinTech platforms, and cloud infrastructure.</span>
   </div>
 
   <div class="timeline">
 
+    <!-- Flair Labs -->
     <div class="container right">
       <div class="content">
         <div class="tag">
           <h2>Flair Labs</h2>
+          <span class="period">Oct 2025 – Present</span>
         </div>
         <div class="desc">
             <h3>Software Engineer | Mumbai</h3>
-            <p><strong>Oct 2025 – Present</strong></p>
-            <ul style="font-size: 1.3rem; margin-top: 0.8rem; line-height: 1.6; padding-left: 1.5rem;">
-              <li>Developed Java Spring Boot backend services and REST APIs for CRM and Dynamic UI applications in banking and financial platforms, implementing multi-tenancy, dynamic tenant resolution, authentication, and authorization.</li>
-              <li>Designed and optimized high-performance PostgreSQL-backed services, leveraging table partitioning, indexing, WAL, <code>tsvector</code> full-text search, <code>UNNEST</code>-based bulk operations, and <code>pg_cron</code>. Integrated platform capabilities such as notification systems, currency exchange services, caching, and Cloudflare integration.</li>
-              <li>Delivered backend features from requirement discussions through production support, working with Argo CD, Helm, Kustomize, and Kubernetes Ingress in CI/CD workflows.</li>
+            <ul>
+              <li>Developed <b>Java Spring Boot</b> backend services and REST APIs for CRM and Dynamic UI applications in banking and financial platforms, implementing multi-tenancy, dynamic tenant resolution, authentication, and authorization.</li>
+              <li>Designed and optimized high-performance <b>PostgreSQL-backed</b> services, leveraging table partitioning, indexing, WAL, <code>tsvector</code> full-text search, <code>UNNEST</code>-based bulk operations, and <code>pg_cron</code>. Integrated platform capabilities such as notification systems, currency exchange services, caching, and Cloudflare integration.</li>
+              <li>Delivered backend features from requirement discussions through production support, working with <b>Argo CD, Helm, Kustomize</b>, and Kubernetes Ingress in CI/CD workflows.</li>
             </ul>
+            <div class="tech-pills">
+              <span class="tech-pill">Java</span>
+              <span class="tech-pill">Spring Boot</span>
+              <span class="tech-pill">PostgreSQL</span>
+              <span class="tech-pill">Argo CD</span>
+              <span class="tech-pill">Helm</span>
+              <span class="tech-pill">Kubernetes</span>
+              <span class="tech-pill">Multi-Tenancy</span>
+            </div>
         </div>
       </div>
     </div>
   
+    <!-- 63 Moons -->
     <div class="container left">
       <div class="content">
         <div class="tag">
-          <h2>63 Moons (now Synapsewave Innovations)</h2>
+          <h2>63 Moons (Synapsewave Innovations)</h2>
+          <span class="period">Feb 2023 – Oct 2025</span>
         </div>
         <div class="desc">
             <h3>Software Engineer | Mumbai</h3>
-            <p><strong>Feb 2023 – Oct 2025</strong></p>
-            <ul style="font-size: 1.3rem; margin-top: 0.8rem; line-height: 1.6; padding-left: 1.5rem;">
-              <li>Developed and maintained C++ applications for financial systems, expanding into distributed backend services, Node.js, and cloud-native platforms.</li>
-              <li>Built proof-of-concepts and backend services using Aerospike, PostgreSQL, Redis, Kong API Gateway, and gRPC to evaluate scalable distributed architectures.</li>
-              <li>Led automation initiatives for a surveillance and risk management platform, reducing regression testing time by <strong>80%</strong> through a custom in-house testing framework.</li>
-              <li>Developed Go, Node.js, and C++ microservices using Protocol Buffers and gRPC, reducing inter-service communication latency by <strong>30%</strong>.</li>
-              <li>Optimized backend services, APIs, and database interactions for high-throughput financial applications; performed root-cause analysis on production incidents to maintain 99.9%+ availability.</li>
+            <ul>
+              <li>Developed and maintained <b>Modern C++</b> applications for financial systems, expanding into distributed backend services, Node.js, and cloud-native platforms.</li>
+              <li>Built proof-of-concepts and backend services using <b>Aerospike, PostgreSQL, Redis, Kong API Gateway</b>, and gRPC to evaluate scalable distributed architectures.</li>
+              <li>Led automation initiatives for a surveillance and risk management platform, reducing regression testing time by <b>80%</b> through a custom in-house testing framework.</li>
+              <li>Developed <b>Go, Node.js, and C++</b> microservices using Protocol Buffers and gRPC, reducing inter-service communication latency by <b>30%</b>.</li>
+              <li>Optimized backend services, APIs, and database interactions for high-throughput financial applications; performed root-cause analysis on production incidents to maintain <b>99.9%+ availability</b>.</li>
             </ul>
+            <div class="tech-pills">
+              <span class="tech-pill">C++17</span>
+              <span class="tech-pill">Go</span>
+              <span class="tech-pill">Node.js</span>
+              <span class="tech-pill">gRPC</span>
+              <span class="tech-pill">Protobuf</span>
+              <span class="tech-pill">Redis</span>
+              <span class="tech-pill">Aerospike</span>
+              <span class="tech-pill">Kafka</span>
+            </div>
         </div>
       </div>
     </div>
@@ -80,7 +115,7 @@
   </div>
 
   <div class="morebtn">
-    <a href="../index.html" class="btn">
+    <a href="../index.html" class="btn btn-outline">
         <i class="fas fa-arrow-left"></i>
         <span>Back to Home</span>
     </a>
@@ -95,51 +130,53 @@
   <div class="box-container">
 
       <div class="box">
-          <h3>Kunal's Portfolio</h3>
-          <p>Thank you for visiting my personal portfolio website. Connect with me over socials or email.<br/> <br/> Keep Building 🚀</p>
+          <h3><i class="fas fa-terminal" style="color: var(--primary);"></i> Kunal's Portfolio</h3>
+          <p>Software Engineer specializing in high-performance backend systems, low-latency architecture, and distributed data platforms.<br/> <br/> Keep Building 🚀</p>
       </div>
 
       <div class="box">
-          <h3>quick links</h3>
-          <a href="../index.html#home"><i class="fas fa-chevron-circle-right"></i> home</a>
-          <a href="../index.html#about"><i class="fas fa-chevron-circle-right"></i> about</a>
-          <a href="../index.html#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
-          <a href="./index.html"><i class="fas fa-chevron-circle-right"></i> experience</a>
-          <a href="../projects/index.html"><i class="fas fa-chevron-circle-right"></i> projects</a>
-          <a href="../index.html#education"><i class="fas fa-chevron-circle-right"></i> education</a>
+          <h3>Quick Links</h3>
+          <div class="links">
+            <a href="../index.html#home"><i class="fas fa-chevron-right"></i> Home</a>
+            <a href="../index.html#about"><i class="fas fa-chevron-right"></i> About</a>
+            <a href="../index.html#skills"><i class="fas fa-chevron-right"></i> Skills</a>
+            <a href="./index.html"><i class="fas fa-chevron-right"></i> Experience</a>
+            <a href="../projects/index.html"><i class="fas fa-chevron-right"></i> Projects</a>
+            <a href="../index.html#education"><i class="fas fa-chevron-right"></i> Education</a>
+          </div>
       </div>
 
       <div class="box">
-          <h3>contact info</h3>
-          <p> <i class="fas fa-phone"></i>+91 6378683117</p>
-          <p> <i class="fas fa-envelope"></i>kunaljainwin@gmail.com</p>
-          <p> <i class="fas fa-map-marked-alt"></i>Andheri, Mumbai, India</p>
+          <h3>Contact Info</h3>
+          <div class="contact-item">
+            <p><i class="fas fa-phone-alt"></i> +91 6378683117</p>
+          </div>
+          <div class="contact-item">
+            <p><i class="fas fa-envelope"></i> kunaljainwin@gmail.com</p>
+          </div>
+          <div class="contact-item">
+            <p><i class="fas fa-map-marker-alt"></i> Andheri, Mumbai, India</p>
+          </div>
           <div class="share">
-              <a href="https://www.linkedin.com/in/kunal-jain-junior" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
-              <a href="https://github.com/kunaljainwin" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
-              <a href="mailto:kunaljainwin@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
-              <a href="https://twitter.com/kal_kunal" class="fab fa-twitter" aria-label="Twitter" target="_blank"></a>
+              <a href="https://www.linkedin.com/in/kunal-jain-junior" class="fab fa-linkedin-in" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"></a>
+              <a href="https://github.com/kunaljainwin" class="fab fa-github" aria-label="GitHub" target="_blank" rel="noopener noreferrer"></a>
+              <a href="mailto:kunaljainwin@gmail.com" class="fas fa-envelope" aria-label="Mail"></a>
+              <a href="https://twitter.com/kal_kunal" class="fab fa-twitter" aria-label="Twitter" target="_blank" rel="noopener noreferrer"></a>
           </div>
       </div>
   </div>
 
-  <h1 class="credit">Copyright © 2026 All rights reserved | Kunal Jain</h1>
+  <div class="credit">Copyright © 2026 Kunal Jain. Built for high performance & reliability.</div>
 
 </section>
 <!-- footer section ends -->
 
 <!-- scroll top btn -->
 <a href="#experience" class="fas fa-angle-up" id="scroll-top"></a>
-<!-- scroll back to top -->
 
-<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
-<!-- jquery cdn -->
+<!-- ==== JAVASCRIPT CDNS ==== -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- scroll reveal anim -->
 <script src="https://unpkg.com/scrollreveal"></script>
-<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
-
 <script src="./script.js"></script>
 
 </body>
