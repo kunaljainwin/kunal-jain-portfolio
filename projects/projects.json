@@ -62,7 +62,7 @@
   {
     "name": "Student Activity Center",
     "desc": "Cross-platform attendance management application with QR code identification, real-time tracking, local storage, and reporting analytics.",
-    "image": "attendence_qr",
+    "image": "student_activity_center",
     "category": "web_app",
     "links": {
       "view": "https://github.com/kunaljainwin/student-activity-center",
