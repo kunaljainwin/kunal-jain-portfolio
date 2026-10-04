@@ -54,11 +54,11 @@ document.onkeydown = function(e) {
 document.addEventListener('visibilitychange',
 function(){
     if(document.visibilityState === "visible"){
-        document.title = "Experience | Portfolio Amit Maity";
+        document.title = "Experience | Portfolio Kunal Jain";
         $("#favicon").attr("href","/assets/images/favicon.ico");
     }
     else {
-        document.title = "Experience | Portfolio Amit Maity";
+        document.title = "Experience | Portfolio Kunal Jain";
         $("#favicon").attr("href","/assets/images/favicon.ico");
     }
 });

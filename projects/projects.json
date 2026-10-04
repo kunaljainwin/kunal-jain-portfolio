@@ -1,30 +1,72 @@
 [
-    {
-        "name": "Student Activity Center",
-        "desc": "A cross-platform app for event management in colleges",
-        "image": "jeemain",
-        "category": "native_android",
-        "links": {
-          "view": "https://appdistribution.firebase.google.com/pub/i/fe64b0480cd86b2e",
-          "code": "https://github.com/kunaljainwin/student-activity-center"
-        }
-    },{
-        "name": "Starflix",
-        "desc": "A website to get recommendations, find trending movies and shows, Watch movie-trailers at one click.",
-        "image": "starflix",
-        "category": "native_android",
-        "links": {
-          "view": "https://starflix-movies-5a210.firebaseapp.com",
-          "code": "https://github.com/kunaljainwin/Starflix"
-        }
-    },{
-        "name": "text-chip-field",
-        "desc": "A Fluter package for taking text input and converting them to chips/tags.",
-        "image": "tracky",
-        "category": "native_android",
-        "links": {
-          "view": "https://play.google.com/store/apps/details?id=achivementtrackerbyamit.example.achivetracker",
-          "code": "https://github.com/kunaljainwin/TEXT-CHIP-FIELD"
-        }
+  {
+    "name": "Communication Service (Spring Boot)",
+    "desc": "Multi-channel communication microservice in Java Spring Boot supporting Email, SMS, and Push notifications with tenant-aware routing and Adapter Pattern.",
+    "image": "communication_service",
+    "category": "backend",
+    "links": {
+      "view": "https://github.com/kunaljainwin/communication-service",
+      "code": "https://github.com/kunaljainwin/communication-service"
     }
+  },
+  {
+    "name": "Kafka-MySQL-Server",
+    "desc": "High-throughput event-driven data processing pipeline using Node.js, Express, Worker Threads, Kafka producers/consumers, and MySQL.",
+    "image": "kafka_mysql",
+    "category": "backend",
+    "links": {
+      "view": "https://github.com/kunaljainwin/KafkaMysqlServer",
+      "code": "https://github.com/kunaljainwin/KafkaMysqlServer"
+    }
+  },
+  {
+    "name": "Go-K8s-Service",
+    "desc": "Production-grade microservices in Go with Kubernetes manifests, Helm charts, automated health checks, and 99.9% uptime orchestration.",
+    "image": "go_k8_service",
+    "category": "cloud",
+    "links": {
+      "view": "https://github.com/kunaljainwin/go-k8-service",
+      "code": "https://github.com/kunaljainwin/go-k8-service"
+    }
+  },
+  {
+    "name": "ExMatch (C++17 Engine)",
+    "desc": "Exchange-side limit order book matching engine in Modern C++ using lock-free queues, multithreading, and low-latency execution.",
+    "image": "exmatch",
+    "category": "systems",
+    "links": {
+      "view": "https://github.com/kunaljainwin/ExMatch",
+      "code": "https://github.com/kunaljainwin/ExMatch"
+    }
+  },
+  {
+    "name": "Go Concurrent Web Crawler",
+    "desc": "High-performance web crawler in Go using Goroutines, configurable concurrency levels, rate limiting, and robust error handling.",
+    "image": "web_crawler",
+    "category": "systems",
+    "links": {
+      "view": "https://github.com/kunaljainwin/concurrent-web-crawler",
+      "code": "https://github.com/kunaljainwin/concurrent-web-crawler"
+    }
+  },
+  {
+    "name": "Fault-Tolerant URL Shortener",
+    "desc": "Containerized URL shortener using Go, Redis Cluster caching for sub-millisecond redirects, and MongoDB, reducing DB load by 60%.",
+    "image": "url_shortener",
+    "category": "backend",
+    "links": {
+      "view": "https://github.com/kunaljainwin/Url-Shortener-demo",
+      "code": "https://github.com/kunaljainwin/Url-Shortener-demo"
+    }
+  },
+  {
+    "name": "Student Activity Center",
+    "desc": "Cross-platform attendance management application with QR code identification, real-time tracking, local storage, and reporting analytics.",
+    "image": "attendence_qr",
+    "category": "web_app",
+    "links": {
+      "view": "https://github.com/kunaljainwin/student-activity-center",
+      "code": "https://github.com/kunaljainwin/student-activity-center"
+    }
+  }
 ]

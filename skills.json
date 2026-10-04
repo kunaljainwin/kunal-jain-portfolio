@@ -1,44 +1,82 @@
 [
-    {
-        "name": "Android",
-        "icon": "https://img.icons8.com/fluency/48/000000/android-os.png"
-    },
-    {
-        "name": "Firebase",
-        "icon": "https://img.icons8.com/color/48/000000/firebase.png"
-    },
-    {
-        "name": "MaterialUI",
-        "icon": "https://img.icons8.com/color/48/000000/material-ui.png"
-    },
-    {
-        "name": "HTML5",
-        "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png"
-    },
-    {
-        "name": "CSS3",
-        "icon": "https://img.icons8.com/color/48/000000/css3.png"
-    },
-    {
-        "name": "JavaScript",
-        "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
-    },
-    
-    {
-        "name": "C++",
-        "icon": "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"
-    },
-    {
-        "name": "Netlify",
-        "icon": "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png"
-    },
-    {
-        "name": "Git VCS",
-        "icon": "https://img.icons8.com/color/48/000000/git.png"
-    },
-    {
-        "name": "GitHub",
-        "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"
-    }
-   
+  {
+    "name": "Java",
+    "icon": "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"
+  },
+  {
+    "name": "C++",
+    "icon": "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"
+  },
+  {
+    "name": "Go (Golang)",
+    "icon": "https://img.icons8.com/color/48/000000/golang.png"
+  },
+  {
+    "name": "Spring Boot",
+    "icon": "https://img.icons8.com/color/48/000000/spring-logo.png"
+  },
+  {
+    "name": "PostgreSQL",
+    "icon": "https://img.icons8.com/color/48/000000/postgreesql.png"
+  },
+  {
+    "name": "Apache Kafka",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg"
+  },
+  {
+    "name": "Redis",
+    "icon": "https://img.icons8.com/color/48/000000/redis.png"
+  },
+  {
+    "name": "gRPC / Protobuf",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grpc/grpc-original.svg"
+  },
+  {
+    "name": "Docker",
+    "icon": "https://img.icons8.com/color/48/000000/docker.png"
+  },
+  {
+    "name": "Kubernetes",
+    "icon": "https://img.icons8.com/color/48/000000/kubernetes.png"
+  },
+  {
+    "name": "AWS",
+    "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png"
+  },
+  {
+    "name": "Node.js",
+    "icon": "https://img.icons8.com/color/48/000000/nodejs.png"
+  },
+  {
+    "name": "Linux (Red Hat)",
+    "icon": "https://img.icons8.com/color/48/000000/linux--v1.png"
+  },
+  {
+    "name": "Argo CD",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/argocd/argocd-original.svg"
+  },
+  {
+    "name": "Helm",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/helm/helm-original.svg"
+  },
+  {
+    "name": "RabbitMQ",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rabbitmq/rabbitmq-original.svg"
+  },
+  {
+    "name": "MySQL",
+    "icon": "https://img.icons8.com/color/48/000000/my-sql.png"
+  },
+  {
+    "name": "MongoDB",
+    "icon": "https://img.icons8.com/color/48/000000/mongodb.png"
+  },
+  {
+    "name": "Python",
+    "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
+  },
+  {
+    "name": "Git VCS",
+    "icon": "https://img.icons8.com/color/48/000000/git.png"
+  }
 ]

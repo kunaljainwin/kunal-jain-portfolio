@@ -59,11 +59,11 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Amit Maity";
+            document.title = "Portfolio | Kunal Jain";
             $("#favicon").attr("href", "assets/images/favicon.ico");
         }
         else {
-            document.title = "Portfolio | Amit Maity";
+            document.title = "Portfolio | Kunal Jain";
             $("#favicon").attr("href", "assets/images/favicon.ico");
         }
     });
@@ -71,7 +71,12 @@ document.addEventListener('visibilitychange',
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["android development", "web development" , "backend development"],
+    strings: [
+        "Backend Development",
+        "Distributed Systems",
+        "High-Performance Applications",
+        "Cloud-Native & DevOps"
+    ],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
